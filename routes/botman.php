@@ -35,3 +35,8 @@ $botman->hears('/gif {name}', function ($bot, $name) {
     $bot->reply($message);
 });
 $botman->hears('Start conversation', BotManController::class.'@startConversation');
+
+
+$botman->hears('GET_STARTED', function (BotMan $bot) {
+  $bot->reply('Hola Invitado');
+});
